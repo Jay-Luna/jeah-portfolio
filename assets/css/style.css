@@ -1,3 +1,5 @@
+/*universal */
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ body{
     color: white;
 }
 
-
+/* header with image(top) and attributes  */
 header{
     width: 100%;
     height: 100vh;
@@ -19,11 +21,13 @@ header{
     background-size: cover;
     background-position: center; 
 }
+/* My name on left side of header with atrributes */
 h1{
     margin-top: 30px;
     font-size: 50px;
     font-style: inherit;
 }
+/* span A in my name with attributes*/
 h1 span{
     color: goldenrod;
 
@@ -31,23 +35,27 @@ h1 span{
 .container{
     padding: 10px 10%;
 } 
-
+/* nav. section with flex box, wrap, & space between the nav. & my name */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+/* removes list bullet & displays it in a line */
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
+/* nav. list with attributes color yellow */
 nav ul li a{
     color: rgb(171, 171, 43);
     text-decoration: none;
     font-size: medium;
 }
+
+/* when hovering on nav. link, these attributes gets applied */
 nav ul li a:hover{
     color: aliceblue;
     font-style: italic;
@@ -66,15 +74,19 @@ font-size: 25px;
     padding: 30px 0;
     color: white;
 }
+/* the box in the "about me" that contains the image & about me section */
 .row{
     display: flex;
     justify-content: space-between;
     flex: wrap;
 }
+
+/* this changes the size box the image is in */
 .row1{
     flex-basis: 35%;    
 }
 
+/* about me image with rounded border added */
 .row1 img{
     width: 300px;
     border-radius: 50px; 
@@ -83,14 +95,37 @@ font-size: 25px;
 .row2{
     flex-basis: 60%; 
 }
-.about-me{
+
+.row3{
+    flex-basis: 40%; 
+}
+.section-heading{
     font-size: 40px;
     color: goldenrod;
 }
 #p1{
     line-height: 30px;
 }
-/* } */
+
+.project {
+    width: 300px;
+    border-radius: 50px;
+}
+
+.work-content {
+    justify-content: space-between;
+}
+
+.other-projects {
+    justify-content: flex-start;
+    flex-basis: 60%; 
+}
+
+#main-project {
+    width: 500px;
+    border-radius: 50px;
+}
+
 /* nav{
     padding-top: 10px;
     margin-left: 5px;
