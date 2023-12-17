@@ -77,9 +77,26 @@ font-size: 25px;
 /* the box in the "about me" that contains the image & about me section */
 .row{
     display: flex;
-    justify-content: space-between;
-    flex: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.projects-container{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    flex-wrap: wrap-reverse;
+}
+
+/* 4 images inside project container */
+.other-projects {
+    justify-content: space-between;
+    margin: 40px 35px;
+
+    flex-basis: 50%; 
+}
+
 
 /* this changes the size box the image is in */
 .row1{
@@ -102,6 +119,7 @@ font-size: 25px;
 .section-heading{
     font-size: 40px;
     color: goldenrod;
+
 }
 #p1{
     line-height: 30px;
@@ -116,136 +134,64 @@ font-size: 25px;
     justify-content: space-between;
 }
 
-.other-projects {
-    justify-content: flex-start;
-    flex-basis: 60%; 
-}
 
 #main-project {
     width: 500px;
     border-radius: 50px;
 }
 
-/* nav{
-    padding-top: 10px;
-    margin-left: 5px;
-    text-align:left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-}
-/* My name to the Left */
-/* h1 {
-    font-size: 30px;
-    color: burlywood;
-    
-}
-nav{
-    padding-top: 10px;
-    margin-left: 5px;
-    text-align:left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-/* } */
-
-/* 
-ul{ 
-     text-align: right; */
-/* }
-
-/* subtitle */
-/* .subtitle{
-    display: flex;
-    background-color: blue; */
-/* } */ 
-
-/* h2{
-    text-align:right;
-}
-
-
-/* mains */
-/* body {
-    background-color: #cddceb;
-    flex-direction: column;
-}
-
-/* main{
-    display: flex;
-    flex-direction: row;
-} */
-/* 
-#about-me{
-    justify-content: space-between;
-    display: flex;
-    background-color: yellow;
-    width: auto; */  */
-    /* margin: 10px, 10px;
-}
-
-#work{
-    justify-content: space-between;
-    display: flex;
-    background-color: aquamarine;
-    width: auto;
+/* Container holding the image and the text */
+.main-project-img {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
   
-}
-#contact{
-    justify-content: space-between;
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+.contact{
     display: flex;
-    background-color: peru;
-    width: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-
-li{
-    display: inline;
-    margin: 40px;
-} */
-
-
+ .contact ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+ } 
  
+.contact-heading{
+    font-size: 40px;
+    color: goldenrod;
+}
+
+    a{
+        color:yellow;
+         
+    }
+    strong{
+        color: white;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
