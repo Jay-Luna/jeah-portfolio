@@ -132,23 +132,33 @@ h3 {
     border-radius: 50px;
 }
 
-#main-project {
-    width: 500px;
-    border-radius: 50px;
+.project-header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 10px;
 }
 
 /* Container holding the image and the text */
-.main-project-img {
+.main-project {
+    display: flex;
+    width: 500px;
+    height: 750px;
+    background-color: gray;
     position: relative;
-    text-align: center;
+    align-items: center;
     color: white;
+    border-radius: 50px;
+}
+
+#main-project-img {
+    width: 500px;
 }
 
 /* Bottom left text */
 .bottom-left {
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    left: 50px;
 }
 
 /* contact info here */
