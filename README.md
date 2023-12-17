@@ -9,6 +9,7 @@ This repository contains the code for my personal portfolio website created usin
 N/A
 
 ## Usage
+<img width="1512" alt="Screenshot 2023-12-16 at 11 26 11 PM" src="https://github.com/Jay-Luna/jeah-portfolio/assets/139188803/e7b54324-94e5-4ce3-9107-2d08b631b44e">
 
 
 
