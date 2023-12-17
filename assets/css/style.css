@@ -1,139 +1,136 @@
-/*universal */
+/* universal styling */
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #080808;
     color: white;
 }
 
 /* header with image(top) and attributes  */
-header{
+header {
     width: 100%;
     height: 100vh;
     background-image: url(../../images/background.JPG);
     background-size: 100%;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
 }
-/* My name on left side of header with atrributes */
-h1{
-    margin-top: 30px;
-    font-size: 50px;
-    font-style: inherit;
-}
-/* span A in my name with attributes*/
-h1 span{
-    color: goldenrod;
 
-}
-.container{
+.container {
     padding: 10px 10%;
-} 
+}
+
 /* nav. section with flex box, wrap, & space between the nav. & my name */
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+/* My name on left side of header with atrributes */
+h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-style: inherit;
+}
+
+/* span A in my name with attributes*/
+h1 span {
+    color: goldenrod;
+}
+
 /* removes list bullet & displays it in a line */
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
+
 /* nav. list with attributes color yellow */
-nav ul li a{
+nav ul li a {
     color: rgb(171, 171, 43);
     text-decoration: none;
     font-size: medium;
 }
 
 /* when hovering on nav. link, these attributes gets applied */
-nav ul li a:hover{
+nav ul li a:hover {
     color: aliceblue;
     font-style: italic;
-  text-shadow: 0 0 5px white;
- }
+    text-shadow: 0 0 5px white;
+}
 
-.header-text{
-margin-top: 10px;
-padding: 10px 180px;
-font-size: 25px;
+/* Second header title */
+h2 {
+    padding: 20px;
+    font-size: 25px;
 }
 
 /* about me section */
-
-#about-me{
+#about-me {
     padding: 30px 0;
-    color: white;
 }
-/* the box in the "about me" that contains the image & about me section */
-.row{
+
+/* flex container to wrap and center all its content */
+.flex-container {
     display: flex;
-    /* justify-content: space-between; */
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.projects-container{
-    display: flex;
-    justify-content: space-between;
-    /* justify-content: center; */
+/* left & right row handles 'about me' section image to text ratio 35% to 60% */
+.left-row {
+    flex-basis: 35%;
+}
+
+/* about me image with rounded border added */
+.left-row img {
+    width: 300px;
+    border-radius: 50px;
+}
+
+.right-row {
+    flex-basis: 60%;
+}
+
+.right-row p {
+    line-height: 30px;
+}
+
+/* section heading title styling */
+h3 {
+    font-size: 40px;
+    color: goldenrod;
+}
+
+/* reverse wrap for work project section */
+.reverse {
     flex-wrap: wrap-reverse;
 }
+
 
 /* 4 images inside project container */
 .other-projects {
     justify-content: space-between;
     margin: 40px 35px;
-
-    flex-basis: 50%; 
+    flex-basis: 50%;
 }
 
-
-/* this changes the size box the image is in */
-.row1{
-    flex-basis: 35%;    
-}
-
-/* about me image with rounded border added */
-.row1 img{
-    width: 300px;
-    border-radius: 50px; 
-} 
-
-.row2{
-    flex-basis: 60%; 
-}
-
-.row3{
-    flex-basis: 40%; 
-}
-.section-heading{
-    font-size: 40px;
-    color: goldenrod;
-
-}
-#p1{
-    line-height: 30px;
+.row3 {
+    flex-basis: 40%;
 }
 
 .project {
     width: 300px;
     border-radius: 50px;
 }
-
-.work-content {
-    justify-content: space-between;
-}
-
 
 #main-project {
     width: 500px;
@@ -145,53 +142,31 @@ font-size: 25px;
     position: relative;
     text-align: center;
     color: white;
-  }
-  
-  /* Bottom left text */
-  .bottom-left {
+}
+
+/* Bottom left text */
+.bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
-  }
+}
 
-.contact{
-    display: flex;
+/* contact info here */
+.contact {
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
- .contact ul li{
-        display: inline-block;
-        list-style: none;
-        margin: 10px 20px;
- } 
- 
-.contact-heading{
-    font-size: 40px;
-    color: goldenrod;
+.contact ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-    a{
-        color:yellow;
-         
-    }
-    strong{
-        color: white;
-    }
+/** font & styling for links */
+a {
+    color: yellow;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+strong {
+    color: white;
+}
