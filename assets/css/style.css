@@ -129,7 +129,8 @@ h3 {
 
 .project {
     width: 300px;
-    border-radius: 50px;
+    border-radius: 30px;
+    
 }
 
 .project-header {
@@ -151,7 +152,7 @@ h3 {
 }
 
 #main-project-img {
-    width: 500px;
+    max-width:100%;
 }
 
 /* Bottom left text */
@@ -179,4 +180,17 @@ a {
 
 strong {
     color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: goldenrod;;
+    cursor: pointer;
 }
